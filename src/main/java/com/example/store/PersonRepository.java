@@ -1,5 +1,6 @@
-package com.example;
+package com.example.store;
 
+import com.example.domain.Person;
 import org.springframework.data.repository.CrudRepository;
 
 import java.util.List;
