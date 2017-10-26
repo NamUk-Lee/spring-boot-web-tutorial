@@ -52,4 +52,9 @@ public class WebController {
 
     }
 
+    @RequestMapping(value="/search", method = RequestMethod.POST)
+    public Iterable<Person> personDelete(@RequestParam("id") Long id){
+        personRepository.delete(id);
+        return person();
+    }
 }
